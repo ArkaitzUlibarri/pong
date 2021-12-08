@@ -1,7 +1,8 @@
 import pygame
 
+
 class Score(pygame.sprite.Sprite):
-    color = (255, 255, 255) #Blanco
+    color = (255, 255, 255)  # Blanco
 
     def __init__(self, font, pos=(0, 0)):
         pygame.sprite.Sprite.__init__(self)

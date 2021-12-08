@@ -1,13 +1,14 @@
 import pygame
 
+
 class Pad(pygame.sprite.Sprite):
-    color = (255, 255, 255) #Blanco
-    size = (15, 45) #15*45
+    color = (255, 255, 255)  # Blanco
+    size = (15, 45)  # 15*45
 
     def __init__(self, pos=(0, 0)):
         pygame.sprite.Sprite.__init__(self)
-        self.image = pygame.Surface(Pad.size).convert()
-        self.image.fill(Pad.color)
+        self.image = pygame.Surface(self.size).convert()
+        self.image.fill(self.color)
         self.rect = self.image.get_rect(center=pos)
         self.max_speed = 5
         self.stop()
